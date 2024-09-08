@@ -5,20 +5,19 @@ hosts:
     base_box: 
       image: ubuntu-focal-x86_64
       man_user: ubuntu
-    flavor: standard.small
-
+    flavor: d2-2
   - name: client
     base_box: 
       image: ubuntu-focal-x86_64
       man_user: ubuntu
-    flavor: standard.small
+    flavor: d2-2
 
 routers:
   - name: router
     base_box:
       image: debian-9-x86_64
       man_user: debian
-    flavor: standard.small
+    flavor: d2-2
 
 networks:
   - name: server-switch
